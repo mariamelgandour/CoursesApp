@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Home">
+
+        <ImageView
+            android:id="@+id/android_img"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:paddingHorizontal="15dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/android"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/android_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android Course"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/statusBar_color"
+            app:layout_constraintTop_toBottomOf="@id/android_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/IOS_img"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:paddingHorizontal="15dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ios"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/android_btn"/>
+
+        <Button
+            android:id="@+id/IOS_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iOS Course"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/statusBar_color"
+            app:layout_constraintTop_toBottomOf="@id/IOS_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/fullStack_img"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:paddingHorizontal="15dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/fullstack"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/IOS_btn"/>
+
+        <Button
+            android:id="@+id/fullStack_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Stack Course"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/statusBar_color"
+            app:layout_constraintTop_toBottomOf="@id/fullStack_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
